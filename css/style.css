@@ -119,9 +119,9 @@ main .first-row__left {
     opacity: 1;
 }
 
-.first-row__left .img-left {
+.img-left {
     height: 240px;
-    width: 240p;
+    width: 240px;
     background: linear-gradient(90deg, #5b78f6 -15%, #c2ebff 58%, #5b78f6 97%);
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -169,15 +169,16 @@ main .first-row__left {
     position: absolute;
     white-space: nowrap;
     will-change: transform;
+    width: 90%;
 
-    animation: pila 8s linear infinite;
+    animation: akiko 8s linear infinite;
 }
 
 .first-row__rigth__span div span {
-    margin-left: 10px;
+    padding: 10px;
 }
 
-@keyframes pila {
+@keyframes akiko {
     0% {
         transform: translateX(0);
     }
@@ -277,12 +278,22 @@ main .first-row__left {
 
 .iconoir-dribbble,
 .iconoir-twitter {
-    font-size: 46px;
+    font-size: 40px;
     padding: 20px;
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.058), rgba(10, 10, 10, 0.765));
+    color: #fff;
     border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
 
 }
+
+.second-row__right--top--social .iconoir-dribbble:hover,
+.second-row__right--top--social .iconoir-twitter:hover {
+    background: #fff;
+    color: #1f1f1f;
+}
+
 
 .second-row__center {
     flex-grow: 1;
@@ -301,4 +312,83 @@ main .first-row__left {
 .second-row__center--top-icons i {
     font-size: 40px;
     color: #fff;
+}
+
+
+/* THIRD ROW */
+
+.third-row {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.third-row__left,
+.third-row__right {
+    width: 50%;
+    border-radius: 30px;
+    background: #1f1f1f;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.third-row__right {
+    position: relative;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.third-row__left div {
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.058), rgba(10, 10, 10, 0.765));
+    border-radius: 30px;
+    height: 175px;
+    width: 145px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.third-row__left div h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.third-row__left div p {
+    line-height: 1.7;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.third-row__right .star-top {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.third-row__right div h1 {
+    font-size: 44px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.third-row__right div h1 span {
+    color: #5B78F6;
+}
+
+.star-bottom {
+    opacity: 0.3;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.star-bottom:hover {
+    opacity: 1;
 }

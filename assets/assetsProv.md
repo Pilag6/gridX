@@ -5,6 +5,10 @@
         <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon.svg" alt="">
         <img src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/my-works.png" alt="">
         <img src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/star1.svg" alt="">
+        <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png" alt="" class="star-icon">
+
+
+  
 
 
 
