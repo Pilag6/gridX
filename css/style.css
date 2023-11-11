@@ -437,3 +437,15 @@ footer p a {
     font-weight: 800;
 }
 
+
+
+.hidden {
+    opacity: 0;
+    scale: 0;
+    transition: all 5s;
+}
+
+.show {
+    opacity: 1;
+    scale: 1;
+}
