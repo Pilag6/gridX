@@ -55,3 +55,12 @@ text.addEventListener("click", () => {
 // function changeBorder () {
 //     footer.style.border = "1px solid red"
 // }
+
+const bar = document.querySelector(".menu-bar")
+const navMenu = document.querySelector(".nav-menu-items")
+const show = document.querySelector(".show")
+
+bar.addEventListener("click", () => {
+    navMenu.classList.toggle("header-nav")
+    show.classList.toggle("showItem")
+})
