@@ -9,6 +9,8 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 0 0.8rem;
+    z-index: 1;
+    height: max-content;
 }
 
 /* styles */
@@ -69,7 +71,6 @@ main .first-row__left,
 main .first-row__rigth {
     width: 50%;
     border-radius: 30px;
-    
 }
 
 main .first-row__left {
@@ -148,10 +149,8 @@ main .first-row__left {
     margin-top: auto;
     height: 450px;
 
-    
     /* background: #1f1f1f; */
 }
-
 
 .first-row__rigth__span {
     background: #1f1f1f;
@@ -269,8 +268,12 @@ main .first-row__left {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: #0F0F0F;
-    background: linear-gradient(120deg, rgba(255, 255, 255, 0.058), rgba(10, 10, 10, 0.765));
+    background: #0f0f0f;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.058),
+        rgba(10, 10, 10, 0.765)
+    );
     padding: 30px;
     border-radius: 30px;
     height: 150px;
@@ -280,12 +283,15 @@ main .first-row__left {
 .iconoir-twitter {
     font-size: 40px;
     padding: 20px;
-    background: linear-gradient(120deg, rgba(255, 255, 255, 0.058), rgba(10, 10, 10, 0.765));
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.058),
+        rgba(10, 10, 10, 0.765)
+    );
     color: #fff;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s;
-
 }
 
 .second-row__right--top--social .iconoir-dribbble:hover,
@@ -293,7 +299,6 @@ main .first-row__left {
     background: #fff;
     color: #1f1f1f;
 }
-
 
 .second-row__center {
     flex-grow: 1;
@@ -306,14 +311,12 @@ main .first-row__left {
     gap: 30px;
     padding: 30px;
     height: 150px;
-
 }
 
 .second-row__center--top-icons i {
     font-size: 40px;
     color: #fff;
 }
-
 
 /* THIRD ROW */
 
@@ -332,7 +335,6 @@ main .first-row__left {
     padding: 30px;
     display: flex;
     gap: 20px;
-
 }
 
 .third-row__right {
@@ -342,7 +344,11 @@ main .first-row__left {
 }
 
 .third-row__left div {
-    background: linear-gradient(120deg, rgba(255, 255, 255, 0.058), rgba(10, 10, 10, 0.765));
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.058),
+        rgba(10, 10, 10, 0.765)
+    );
     border-radius: 30px;
     height: 175px;
     width: 145px;
@@ -380,7 +386,7 @@ main .first-row__left {
 }
 
 .third-row__right div h1 span {
-    color: #5B78F6;
+    color: #5b78f6;
 }
 
 .star-bottom {
@@ -402,7 +408,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px
+    gap: 40px;
 }
 
 footer nav ul {
@@ -427,7 +433,7 @@ footer p {
 }
 
 footer p a {
-    color: #5B78F6;
+    color: #5b78f6;
     font-weight: 800;
-
 }
+
