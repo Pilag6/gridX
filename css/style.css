@@ -437,15 +437,41 @@ footer p a {
     font-weight: 800;
 }
 
+.flashIn {
+    position: absolute;
+    z-index: 10000;
+    background: #1f1f1f;
+    height: 100vh;
+    width: 100%;
+    animation: inOut 2s ease-in forwards;
+}
 
+@keyframes inOut {
+    0% {
+        transform: translateY(-90%) scaleY(1);
+    }
 
-.hidden {
+    100% {
+        transform: translateY(5000px) scaleY(0);
+    }
+}
+
+/* .light {
+    background: #dcc6c6;
+    color: #000;
+}
+
+.anchorDark {
+    color: #0f0f0f;
+}
+
+.from {
     opacity: 0;
     scale: 0;
     transition: all 5s;
 }
 
-.show {
+.to {
     opacity: 1;
     scale: 1;
-}
+} */

@@ -32,10 +32,16 @@
 
         <!-- AOS -->
 
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
 
     <body>
+
+        <div class="flashIn"></div>
+        
         <div class="main-container">
             <!-- HEADER -->
             <header class="">
@@ -71,7 +77,7 @@
 
                 <section class="first-row">
                     <!-- LEFT -->
-                    <article class="first-row__left">
+                    <article class="first-row__left" data-aos="zoom-in">
                         <div class="img-left">
                             <img
                                 draggable="false"
@@ -93,7 +99,7 @@
 
                     <!-- RIGTH -->
                     <article class="first-row__rigth">
-                        <div class="first-row__rigth__span">
+                        <div class="first-row__rigth__span" data-aos="zoom-in">
                             <div>
                                 <span
                                     >LATEST WORK AND <b>FEATURED</b>
@@ -124,14 +130,17 @@
                         </div>
 
                         <div class="right-bottom">
-                            <div class="bottom-left">
+                            <div class="bottom-left" data-aos="zoom-in">
                                 <div class="bottom-left_img">
                                     <img
                                         src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png"
                                         alt=""
                                     />
                                 </div>
-                                <div class="bottom-left-content">
+                                <div
+                                    class="bottom-left-content"
+                                    data-aos="zoom-in"
+                                >
                                     <div class="bottom-left-content__text">
                                         <h3>MORE ABOUT ME</h3>
                                         <h2>Credentials</h2>
@@ -145,7 +154,7 @@
                                 </div>
                             </div>
 
-                            <div class="bottom-rigth">
+                            <div class="bottom-rigth" data-aos="zoom-in">
                                 <div class="bottom-rigth_img">
                                     <img
                                         src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/my-works.png"
@@ -172,7 +181,7 @@
                 <!-- 2° ROW -->
 
                 <section class="second-row">
-                    <article class="second-row__left">
+                    <article class="second-row__left" data-aos="zoom-in">
                         <div class="second-row__left--top">
                             <img
                                 src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/gfonts.png"
@@ -195,7 +204,7 @@
                         </div>
                     </article>
 
-                    <article class="second-row__center">
+                    <article class="second-row__center" data-aos="zoom-in">
                         <div class="second-row__center--top">
                             <div class="second-row__center--top-icons">
                                 <i class="iconoir-camera"></i>
@@ -220,7 +229,7 @@
                         </div>
                     </article>
 
-                    <article class="second-row__right">
+                    <article class="second-row__right" data-aos="zoom-in">
                         <div class="second-row__right--top">
                             <div class="second-row__right--top--social">
                                 <i class="iconoir-dribbble"></i>
@@ -247,7 +256,7 @@
                 <!-- 3° ROW -->
 
                 <section class="third-row">
-                    <article class="third-row__left">
+                    <article class="third-row__left" data-aos="zoom-in">
                         <div>
                             <h2>07</h2>
                             <p>YEARS EXPERIENCE</p>
@@ -262,7 +271,7 @@
                         </div>
                     </article>
 
-                    <article class="third-row__right">
+                    <article class="third-row__right" data-aos="zoom-in">
                         <img
                             class="star-top"
                             src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
@@ -284,7 +293,7 @@
             </main>
 
             <!-- FOOTER -->
-            <footer class="">
+            <footer class="footer" data-aos="zoom-in">
                 <div>
                     <img
                         src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/logo.svg"
@@ -294,10 +303,10 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#" title="Home">Home</a></li>
-                        <li><a href="#" title="About">About</a></li>
-                        <li><a href="#" title="Works">Works</a></li>
-                        <li><a href="#" title="Contact">Contact</a></li>
+                        <li><a href="#" class="anchor" title="Home">Home</a></li>
+                        <li><a href="#" class="anchor" title="About">About</a></li>
+                        <li><a href="#" class="anchor" title="Works">Works</a></li>
+                        <li><a href="#" class="anchor" title="Contact">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -319,8 +328,28 @@
                     <a href="https://github.com/Pilag6" target="_blank">Pila</a>
                 </p>
             </footer>
+
+            <!-- <button id="btn">Light Mode</button> -->
         </div>
 
+       <!-- <div >
+            <img
+            class="from"
+                draggable="false"
+                src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/me.png"
+                alt=""
+            />
+            <img
+            draggable="false"
+            src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/me.png"
+            alt=""
+        />
+       </div> -->
+        
+
         <script type="module" src="./js/main.js"></script>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </body>
 </html>
