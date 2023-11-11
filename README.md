@@ -7,7 +7,7 @@
 
 # gridX
 
- <a href="https://pilag6.github.io/gridX/" target="_blank"><strong>➥ Live Demo</strong></a>
+ <a href="https://gridxportfolio.netlify.app/" target="_blank"><strong>➥ Live Demo</strong></a>
 
    <br />
   <br />
