@@ -47,3 +47,6 @@
     section.third-row
 
   .footer
+
+
+  .cards
