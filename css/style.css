@@ -178,8 +178,6 @@ main .first-row__left {
     justify-content: space-between;
     margin-top: auto;
     height: 100%;
-
-    /* background: var(--darkGreyBoxes); */
 }
 
 .first-row__right--span {
@@ -200,7 +198,7 @@ main .first-row__left {
     will-change: transform;
     width: 90%;
 
-    animation: akiko 8s linear infinite;
+    animation: akiko 15s linear infinite;
 }
 
 .first-row__right--span div span {
@@ -209,91 +207,103 @@ main .first-row__left {
 
 @keyframes akiko {
     0% {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
 
     100% {
-        transform: translateX(-65.3%);
+        transform: translateX(-200%);
     }
 }
-.bottom-left,
-.bottom-right {
+.first-row__right--bottom .cards {
     width: 50%;
 }
 
-.bottom-left,
-.bottom-right,
-.second-row__left,
-.second-row__right,
-.second-row__center {
+.signature {
+    filter: invert(100%) sepia(4%) saturate(14%) hue-rotate(40deg) brightness(107%) contrast(100%);
+}
+
+/* ----------------------
+        CARDS
+-------------------------*/
+.cards {
     background: var(--darkGreyBoxes);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     padding: 20px 25px 30px 25px;
     gap: 20px;
+    height: 100%;
 }
 
-.second-row__left--top {
+.cards__top {
     height: 150px;
 }
 
-.bottom-left-content,
-.bottom-right-content,
-.second-row__left--content,
-.second-row__right--content,
-.second-row__center--content {
+.cards__top img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cards__bottom {
     display: flex;
     justify-content: space-between;
 }
 
-.bottom-right-content__text h3,
-.bottom-left-content__text h3,
-.second-row__left--text h3,
-.second-row__right--text h3,
-.second-row__center--text h3 {
+.cards__bottom--text h3 {
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.bottom-right-content__text h2,
-.bottom-left-content__text h2,
-.second-row__left--text h2,
-.second-row__right--text h2,
-.second-row__center--text h2 {
+.cards__bottom--text h2  {
     color: #fff;
 }
 
-.bottom-right-content__icon,
-.bottom-left-content__icon,
-.second-row__left--icon,
-.second-row__right--icon,
-.second-row__center--icon {
+.cards__bottom--icon {
     opacity: 0.3;
     cursor: pointer;
     transition: all 0.5s;
 }
 
-.bottom-right-content__icon:hover,
-.bottom-left-content__icon:hover,
-.second-row__left--icon:hover,
-.second-row__right--icon:hover,
-.second-row__center--icon:hover {
+.cards__bottom--icon:hover {
     opacity: 1;
 }
 
+/* ----------------------
+    MAIN | SECOND ROW
+-------------------------*/
 .second-row {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    gap: 30px;
-    /* height: 300px; */
+    padding: var(--paddingBoxes);
+    gap: var(--gapMargin);
 }
 
-.second-row__right--top--social {
+/* SECOND ROW CENTER */
+
+.second-row__center {
+    flex-grow: 1;
+}
+
+.cards__top--icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--gapMargin);
+    padding: 30px;
+    height: 150px;
+}
+
+.cards__top--icons i {
+    font-size: 40px;
+    color: #fff;
+}
+
+/* SECOND ROW RIGHT */
+
+.second-social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,7 +316,6 @@ main .first-row__left {
     );
     padding: 30px;
     border-radius: 30px;
-    height: 150px;
 }
 
 .iconoir-dribbble,
@@ -324,28 +333,10 @@ main .first-row__left {
     transition: all 0.5s;
 }
 
-.second-row__right--top--social .iconoir-dribbble:hover,
-.second-row__right--top--social .iconoir-twitter:hover {
+.iconoir-dribbble:hover,
+.iconoir-twitter:hover {
     background: #fff;
     color: var(--darkGreyBoxes);
-}
-
-.second-row__center {
-    flex-grow: 1;
-}
-
-.second-row__center--top-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    padding: 30px;
-    height: 150px;
-}
-
-.second-row__center--top-icons i {
-    font-size: 40px;
-    color: #fff;
 }
 
 /* THIRD ROW */
