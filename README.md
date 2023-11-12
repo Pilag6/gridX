@@ -12,6 +12,6 @@
    <br />
   <br />
 
-![image](https://github.com/Pilag6/gridX/assets/79191808/94e0ee77-2b73-4a7f-8722-0b2cf8542cba)
+  ![GridX](https://github.com/Pilag6/Pilag6/assets/79191808/3f91e4ab-9cfc-4d29-ba87-b9b9e26486e1)
 
 </div>
