@@ -28,6 +28,20 @@
 
       article.first-row__right
         .first-row__right--span
+          div
+            span
+              b
+              img
+            span
+              b
+              img 
+            span
+              b
+              img 
+            span
+              b
+              img  
+        .first-row__right--bottom
         
     section.second-row
     section.third-row
