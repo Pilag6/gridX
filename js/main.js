@@ -11,9 +11,9 @@ AOS.init({
 
 const bar = document.querySelector(".menu-bar")
 const navMenu = document.querySelector(".nav-menu-items")
-const show = document.querySelector(".show")
+const showMenu = document.querySelector(".nav-menu")
 
 bar.addEventListener("click", () => {
     navMenu.classList.toggle("header-nav")
-    show.classList.toggle("showItem")
+    showMenu.classList.toggle("showItem")
 })

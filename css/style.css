@@ -502,17 +502,18 @@ footer p a {
     header nav,
     header .nav-btn {
         display: none;
-        transition: all 0.5s;
-    }
-
-    .showItem {
-        display: block;
     }
 
     .logo {
         z-index: 1000;
     }
+    
+    /* Only for JS */
+    .showItem {
+        display: block;
+    }
 
+    /* Only for JS */
     .header-nav{
         flex-direction: column;
         justify-content: center;
@@ -525,7 +526,6 @@ footer p a {
         top: 0;
         left: 0;
         padding: 30px;
-        transition: all 0.5s;
     }
 
     .nav-menu-items li a {
